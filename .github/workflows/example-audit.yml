@@ -1,0 +1,13 @@
+# Copy into your own repo to audit your site on every push.
+name: accessibility-audit
+on: [workflow_dispatch]
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install git+https://github.com/paopao-studio-ai/eaa-quick-audit && python -m playwright install --with-deps chromium
+      - run: eaa-audit https://www.w3.org/WAI/demos/bad/before/home.html --max-pages 3 --out report
+      - uses: actions/upload-artifact@v4
+        with: {name: eaa-report, path: report}

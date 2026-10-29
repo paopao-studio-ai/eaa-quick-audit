@@ -1,0 +1,98 @@
+{
+  "url": "https://www.w3.org/WAI/demos/bad/before/home.html",
+  "date": "2026-10-29",
+  "accessibility_statement_link": true,
+  "pages": [
+    "https://www.w3.org/WAI/demos/bad/before/home.html",
+    "https://www.w3.org/",
+    "https://www.w3.org/WAI/",
+    "https://www.w3.org/WAI/demos/bad/Overview.html"
+  ],
+  "issues": [
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI",
+      "sc": [
+        "1.1.1"
+      ],
+      "nodes": 33,
+      "pages": [
+        "https://www.w3.org/WAI/demos/bad/before/home.html"
+      ],
+      "example": "<img src=\"./img/border_left_top.gif\" width=\"10px\" height=\"10px\">"
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/select-name?application=axeAPI",
+      "sc": [
+        "4.1.2"
+      ],
+      "nodes": 1,
+      "pages": [
+        "https://www.w3.org/WAI/demos/bad/before/home.html"
+      ],
+      "example": "<select onchange=\"location.href = this.value;\">"
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI",
+      "sc": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "nodes": 7,
+      "pages": [
+        "https://www.w3.org/WAI/demos/bad/before/home.html"
+      ],
+      "example": "<a href=\"javascript:location.href='home.html';\" onfocus=\"blur();\"><img name=\"nav_home\" src=\"./img/nav_home.gif\" width=\"88\" height=\"27\" hspace=\"15\" border=\"0px\"></a>"
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI",
+      "sc": [
+        "1.4.3"
+      ],
+      "nodes": 2,
+      "pages": [
+        "https://www.w3.org/WAI/demos/bad/before/home.html"
+      ],
+      "example": "<b>Free Penguins</b>"
+    },
+    {
+      "id": "target-size",
+      "impact": "serious",
+      "help": "All touch targets must be 24px large, or leave sufficient space",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/target-size?application=axeAPI",
+      "sc": [
+        "2.5.8"
+      ],
+      "nodes": 2,
+      "pages": [
+        "https://www.w3.org/WAI/demos/bad/before/home.html"
+      ],
+      "example": "<a href=\"./reports/home.html\" class=\"report\"><span class=\"hidden\">Inaccessible Home Page </span> Report</a>"
+    },
+    {
+      "id": "html-has-lang",
+      "impact": "serious",
+      "help": "<html> element must have a lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=axeAPI",
+      "sc": [
+        "3.1.1"
+      ],
+      "nodes": 1,
+      "pages": [
+        "https://www.w3.org/WAI/demos/bad/before/home.html"
+      ],
+      "example": "<html>"
+    }
+  ]
+}
