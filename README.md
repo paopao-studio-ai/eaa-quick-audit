@@ -19,8 +19,7 @@ eaa-audit https://your-shop.example --max-pages 15 --lang de --out report
 eaa-audit https://staging.example --fail-on serious
 ```
 
-Example output (W3C's intentionally inaccessible demo site): [`examples/w3c-bad-demo-en/report.html`](examples/w3c-bad-demo-en/report.html)
-· German: [`examples/w3c-bad-demo-de/report.html`](examples/w3c-bad-demo-de/report.html)
+Example output (W3C's intentionally inaccessible demo site): [rendered EN](https://paopao-studio.pages.dev/eaa-audit/sample-report.html) · [rendered DE](https://paopao-studio.pages.dev/eaa-audit/sample-report-de.html) · source in [`examples/`](examples/)
 
 ## What it is not
 
